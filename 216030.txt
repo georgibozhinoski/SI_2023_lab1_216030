@@ -1,0 +1,32 @@
+4. се иницијализира git директоримот со командата git init.
+5. се поврзува local repo со remote repo со командата git remote add origin https://github.com/georgibozhinoski/SI_2023_lab1_216030.git
+6. се додава readme датотеката со командата nano README.md и се користи командата git add --all за фајлот да биде додаден во staged состојба, а потоа со 
+git commit -m "Initial commit" се прави првиот commit.
+7. Со командата nano SILab1.java се додава нов јава фајл каде се содржи јава кодот. Со командата git add --all се додава и овој фајл во staged за да може со командата
+git commit -m "Add java class" да се направи нов commit.
+8. Синхронизацијата се прави со командата git push -u origin master.
+9. Со командата git branch bug1/bug2/bug3 се додаваат branches на кои ке се решаваат bugs.
+10. На bug1 се врши префрлање со командата git checkout bug1.
+11. Грешката во овој циклус е што бројачот започнува од 0 и оди до i<=n, тоа на гранката bug1 може да се поправи со тоа што
+ќе го направиме бројачот да започне од 1 или да оди до i<n.
+12. Префрлањето на гранката bug2 се врши со командата git checkout bug2.
+13. Овој метод треба да ги врати непарните броеви па затоа проверката во if условот треба да биде "if (el % 2 != 0)",
+a не "if (el % 2 == 0)"
+14. Префрлањето на гранката bug3 се прави со git checkout bug3.
+15. Овој метод треба да пресмета збир, а не производ на парните броеви па затоа кодот треба да се поправи така што
+променливата sum ќе се иницијализира на 0 и врз неа нема да се врши множење туку собирање со парните броеви.
+16.Се додаваат сите гранки на remote repo со git push --all
+17.Се префрламе на master со git checkout master.
+18.Нема конфликт. Се извршил fast-forward merge.
+19.git push --all
+20. Нема грешка и беше искористена merge strategy 'ort'.
+21.git push --all
+22. git checkout bug3
+23.git rebase master
+24.git checkout master
+25.git merge bug3 Нема грешка и беше искористен 'fast-forward' merging.
+26.git push https://github.com/georgibozhinoski/SI_2023_lab1_216030.git --force за bug3.
+27.со git add --all се додаваат file-овите и со git commit -m се прави последниот commit
+28.git push --all
+
+
